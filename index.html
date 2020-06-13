@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+        <h2 class="titulo">Mi lista de Tareas</h2>
+      <p>
+        <label for="new-task">AGREGAR TAREAS</label
+        ><input id="new-task" type="text" placeholder="Ingrese tarea"/><button>Agregar</button>
+      </p>
+
+      <h3>TODOS</h3>
+      <ul id="incomplete-tasks">
+        <li>
+          <input type="checkbox" /><label>Limpiar mi cuarto</label
+          ><input type="text" /><button class="edit">Editar</button
+          ><button class="delete">Borrar</button>
+        </li>
+        <li class="editMode">
+          <input type="checkbox" /><label>Trabajar</label
+          ><input type="text" value="Trabajar" /><button class="edit">
+            Guardar</button
+          ><button class="delete">Borrar</button>
+        </li>
+      </ul>
+
+      <h3>COMPLETADOS</h3>
+      <ul id="completed-tasks">
+        <li>
+          <input type="checkbox" checked /><label> Reapasar curso de frond end</label
+          ><input type="text" /><button class="edit">Editar</button
+          ><button class="delete">Borrar</button>
+        </li>
+      </ul>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
